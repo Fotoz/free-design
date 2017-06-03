@@ -1,0 +1,23 @@
+* {
+    color: #fff;
+}
+
+.header-wrapper>p {
+    font: 2.250em Kaushan Script, cursive;
+}
+
+nav {
+    font: 1.125em Signika, sans-serif;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+#text_slide1, #text_slide2, #text_slide3, #text_slide4 {
+    font: 3.750em Signika, sans-serif;
+    color: #ecedef;
+    text-align: center;
+    text-transform: capitalize;
+}

@@ -1,11 +1,54 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Free Design</title>
+        <title>Simplex</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+    <!-- начало блока header -->    
+        <header>
+            <div class="header-wrapper">
+                <p>simplex</p>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a>
+                        <li><a href="#">About</a>
+                        <li><a href="#">Services</a>
+                        <li><a href="#">Clients</a>
+                        <li><a href="#">Contacts</a>
+                    </ul>
+                </nav>
+                <h1 id="text_slide1">let us show you the way to success</h1>
+                <h1 id="text_slide2">interminable energy for your project</h1>
+                <h1 id="text_slide3">we know how to solve your problems!</h1>
+                <h1 id="text_slide4">make your business a booming one!</h1>
+                <div class="h-icons">
+                    <a href="#"><img src="images/h-facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="images/h-twitter.png" alt="twitter"></a>
+                    <a href="#"><img src="images/h-google.png" alt="google"></a>
+                    <a href="#"><img src="images/h-in.png" alt="in"></a>
+                </div>
+            </div>
+        </header>
         
+        
+        
+    <!-- JQuery -->     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            var text_slide_cur=0;
+            function showtext_slide(){
+                $('#text_slide'+(text_slide_cur+1)).css({opacity: 0}).animate({opacity: 1.0,left: "0"}, 1000);
+                setTimeout(hidetext_slide, 5000);
+            }
+            function hidetext_slide(){
+                $('#text_slide'+(text_slide_cur+1)).css({opacity: 1}).animate({opacity: 0,left: "0"}, 1000,function(){showtext_slide();});
+                text_slide_cur=(text_slide_cur+1)%4;
+            }
+            $(document).ready(function() {
+                showtext_slide();
+            })
+        </script>
     </body>
 </html>

@@ -1,2 +1,77 @@
 @import url(reset.css);
+@import url(typography.css);
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script|Signika);
+
+* {
+    box-sizing: border-box;
+}
+
+/*** начало блока header
+    ==================== ***/
+
+header {
+    background: url(../images/header-bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.header-wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header-wrapper>p {
+    padding-top: 20px;
+}
+
+nav {
+    margin-top: -31px;
+    padding-bottom: 160px;
+}
+
+nav li {
+    display: inline;
+    padding: 42px 10px 5px;
+    transition: background .3s;
+}
+
+nav li:hover, nav li:first-child {
+    background: #3f9fc9;
+}
+
+#text_slide1, #text_slide2, #text_slide3, #text_slide4 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+.h-icons {
+    text-align: center;
+    padding-top: 320px;
+    padding-bottom: 190px;
+}
+
+.h-icons img {
+    display: inline;
+    margin-right: 15px;
+}
+
+img[alt="in"] {
+    margin-right: 0;
+}
+
+header::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 40px solid #222;
+    border-right: 55px solid transparent;
+    border-bottom: 55px solid transparent;
+    border-left: 55px solid transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -55px;
+}
