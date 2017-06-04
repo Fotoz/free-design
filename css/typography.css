@@ -2,7 +2,7 @@
     color: #fff;
 }
 
-.header-wrapper>p {
+p.logo {
     font: 2.250em Kaushan Script, cursive;
 }
 
@@ -15,9 +15,34 @@ a {
     text-decoration: none;
 }
 
-#text_slide1, #text_slide2, #text_slide3, #text_slide4 {
-    font: 3.750em Signika, sans-serif;
+h1, h2, h3 {
+    font-family: Signika, sans-serif;
     color: #ecedef;
     text-align: center;
     text-transform: capitalize;
+}
+
+h1 {
+    font-size: 3.750em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.188em;
+}
+
+h2+p {
+    font: 1.188em Arial, sans-serif;
+    text-align: center;
+}
+
+h3+p {
+    font: 0.813em Arial, sans-serif;
+}
+
+.team {
+    text-align: center;
 }
