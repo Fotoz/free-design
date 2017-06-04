@@ -14,7 +14,7 @@
                     <ul>
                         <li><a href="#header">Home</a>
                         <li><a href="#about">About</a>
-                        <li><a href="#">Services</a>
+                        <li><a href="#services">Services</a>
                         <li><a href="#">Clients</a>
                         <li><a href="#">Contacts</a>
                     </ul>
@@ -40,13 +40,13 @@
                         <ul>
                             <li><a href="#header">Home</a>
                             <li><a href="#about">About</a>
-                            <li><a href="#">Services</a>
+                            <li><a href="#services">Services</a>
                             <li><a href="#">Clients</a>
                             <li><a href="#">Contacts</a>
                         </ul>
                     </nav>
                     <h2>only professional <span class="services">services</span> for our <span class="clients">clients</span></h2>
-                    <p><a href="#">Click here</a> for more info about this free website. Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies.</p>
+                    <p><a href="#">Click here</a> for more info about this free website. Lorem ipsum dolor sit amet, consectetur elit.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies.</p>
                     <div class="team">
                         <div class="senior-manager">
                             <img src="images/senior-manager.jpg" alt="Laura Stegner">
@@ -95,6 +95,45 @@
                     </div>
                 </div>    
             </section>
+    <!-- начало блока services -->
+            <section id="services">
+                <div class="wrapper">
+                    <p class="logo">simplex</p>
+                    <nav>
+                        <ul>
+                            <li><a href="#header">Home</a>
+                            <li><a href="#about">About</a>
+                            <li><a href="#services">Services</a>
+                            <li><a href="#">Clients</a>
+                            <li><a href="#">Contacts</a>
+                        </ul>
+                    </nav>
+                    <h2>our services</h2>
+                    <p>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a, commodo luctus libero. Praesent faucibus malesuada faucibus. Donec laoreet metus id laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed nulla facilisis consequat. Curabitur vel lorem sit amet nulla ullamcorper fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="our-set">
+                        <div class="strategy">
+                            <img src="images/strategy.png" alt="strategy">
+                            <h3>Strategy</h3>
+                            <p>Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a, commodo luctus libero.</p>
+                        </div>
+                        <div class="research">
+                            <img src="images/research.png" alt="research">
+                            <h3>Research</h3>
+                            <p>Ite auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibhh sagittis ut.</p>
+                        </div>
+                        <div class="development">
+                            <img src="images/development.png" alt="development">
+                            <h3>Development</h3>
+                            <p>Praesent faucibusamus ater asmagna non nunc tristique rhoncus. Aliquam nib ante, tas id dictum aluctus libero.</p>
+                        </div>
+                        <div class="consulting">
+                            <img src="images/consulting.png" alt="consulting">
+                            <h3>Consulting</h3>
+                            <p>Etiam dui eros na non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a commodo luctus libero.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         
         
@@ -119,7 +158,7 @@
             var text_slide_cur=0;
             function showtext_slide(){
                 $('#text_slide'+(text_slide_cur+1)).css({opacity: 0}).animate({opacity: 1.0,left: "0"}, 1000);
-                setTimeout(hidetext_slide, 5000);
+                setTimeout(hidetext_slide, 4000);
             }
             function hidetext_slide(){
                 $('#text_slide'+(text_slide_cur+1)).css({opacity: 1}).animate({opacity: 0,left: "0"}, 1000,function(){showtext_slide();});

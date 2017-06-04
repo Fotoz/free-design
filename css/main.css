@@ -64,12 +64,6 @@ img[alt="in"] {
 /*** начало блока about
     ==================== ***/
 
-#about {
-    background: #f17c72;
-    width: 100%;
-    position: relative;
-}
-
 #about::before {
     content: '';
     width: 0;
@@ -81,6 +75,15 @@ img[alt="in"] {
     position: absolute;
     left: 50%;
     margin-left: -55px;
+}
+
+#about, #services {
+    width: 100%;
+    position: relative;
+}
+
+#about {
+    background: #f17c72;
 }
 
 #about li:hover, #about li:nth-last-child(4) {
@@ -105,9 +108,10 @@ p>a {
     color: #f8291a;
 }
 
-.team {
+.team, .our-set {
     padding-bottom: 190px;
 }
+
 .senior-manager, .manager, .accounter, .director {
     background: #e6655e;
     border: 4px solid #f4948b;
@@ -126,7 +130,7 @@ p>a {
     margin: 20px 0 30px;
 }
 
-h3+p {
+.team p {
     border-bottom: 2px solid #2aae96;
     padding-bottom: 20px;
 }
@@ -139,7 +143,10 @@ h3+p {
     margin-right: 5px;
 }
 
-#about::after {
+/*** начало блока services
+    ==================== ***/
+
+#services::before {
     content: '';
     width: 0;
     height: 0;
@@ -150,4 +157,32 @@ h3+p {
     position: absolute;
     left: 50%;
     margin-left: -55px;
+}
+
+#services {
+    background: #32ac97;
+}
+
+#services li:hover, #services li:nth-last-child(3) {
+    background: #46dcc7;
+}
+
+.strategy, .research, .development, .consulting {
+    background: #46dcc7;
+    border: 4px solid #a5dbd1;
+    display: inline-block;
+    width: 220px;
+    margin-right: 15px;
+}
+
+.consulting {
+    margin-right: 0;
+}
+
+.strategy>img, .research>img, .development>img, .consulting>img {
+    padding: 20px 0 20px;
+}
+
+.strategy p, .research p, .development p, .consulting p {
+    padding: 20px 5px 35px;
 }
