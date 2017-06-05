@@ -39,10 +39,36 @@ h2+p {
     text-align: center;
 }
 
-h3+p {
+h3+p, .companys a, footer {
     font: 0.813em Arial, sans-serif;
 }
 
-.team, .our-set {
+.team, .our-set, .companys, form {
     text-align: center;
+}
+
+.address h3, .form h3 {
+    text-align: left;
+}
+
+.address p {
+    font: 0.875em Arial, sans-serif;
+    line-height: 20px;
+}
+
+.address a {
+    color: #373b47;
+}
+
+input[placeholder], textarea {
+    font: 0.813em Arial, sans-serif;
+    color: #39596e;
+}
+
+input[value] {
+    font: 1.188em Arial, sans-serif;
+}
+
+.f-logo {
+    font: 1.5em Kaushan Script, cursive;
 }
