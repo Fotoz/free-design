@@ -48,9 +48,7 @@ h1 {
 }
 
 .h-icons {
-    text-align: center;
-    padding-top: 320px;
-    padding-bottom: 185px;
+    padding: 320px 0 185px;
 }
 
 .h-icons img {
@@ -64,17 +62,20 @@ img[alt="in"] {
 /*** начало блока about
     ==================== ***/
 
-#about::before {
+#about::before, #services::before, #clients::before, #contacts::before {
     content: '';
     width: 0;
     height: 0;
-    border-top: 40px solid #241912;
     border-right: 55px solid transparent;
     border-bottom: 55px solid transparent;
     border-left: 55px solid transparent;
     position: absolute;
     left: 50%;
     margin-left: -55px;
+}
+
+#about::before {
+    border-top: 40px solid #241912;
 }
 
 #about, #services, #clients, #contacts {
@@ -147,16 +148,7 @@ p>a {
     ==================== ***/
 
 #services::before {
-    content: '';
-    width: 0;
-    height: 0;
     border-top: 40px solid #f17c72;
-    border-right: 55px solid transparent;
-    border-bottom: 55px solid transparent;
-    border-left: 55px solid transparent;
-    position: absolute;
-    left: 50%;
-    margin-left: -55px;
 }
 
 #services {
@@ -191,16 +183,7 @@ p>a {
     ==================== ***/
 
 #clients::before {
-    content: '';
-    width: 0;
-    height: 0;
     border-top: 40px solid #32ac97;
-    border-right: 55px solid transparent;
-    border-bottom: 55px solid transparent;
-    border-left: 55px solid transparent;
-    position: absolute;
-    left: 50%;
-    margin-left: -55px;
 }
 
 #clients {
@@ -251,16 +234,7 @@ p>a {
     ==================== ***/
 
 #contacts::before {
-    content: '';
-    width: 0;
-    height: 0;
     border-top: 40px solid #7f4c76;
-    border-right: 55px solid transparent;
-    border-bottom: 55px solid transparent;
-    border-left: 55px solid transparent;
-    position: absolute;
-    left: 50%;
-    margin-left: -55px;
 }
 
 #contacts {
@@ -282,7 +256,7 @@ p>a {
     clear: both;
 }
 
-.address h3, .form h3 {
+#contacts h3 {
     padding-bottom: 40px;
 }
 
@@ -319,6 +293,7 @@ textarea {
 input[placeholder], textarea {
     border: 0.063em solid #39596e;
     background: #c2e8f4;
+    cursor: pointer;
 }
 
 input[value] {
@@ -327,6 +302,10 @@ input[value] {
     padding: 5px 45px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+input[placeholder]:focus, textarea:focus {
+    outline: none;
 }
 
 /*** начало блока footer
@@ -340,4 +319,23 @@ footer {
 
 footer p {
     padding-bottom: 7px;
+}
+
+footer img {
+    margin-top: 12px;
+    width: 88px;
+    height: 31px
+}
+
+footer a:hover {
+    color: #53cbff;
+}
+
+#toTop {
+    width: 45px;
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    cursor:pointer;
+    display:none;
 }

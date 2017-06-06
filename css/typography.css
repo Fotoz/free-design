@@ -3,7 +3,7 @@
 }
 
 p.logo {
-    font: 2.250em Kaushan Script, cursive;
+    font: 2.250em 'Kaushan Script', cursive;
 }
 
 nav {
@@ -36,14 +36,13 @@ h3 {
 
 h2+p {
     font: 1.188em Arial, sans-serif;
-    text-align: center;
 }
 
 h3+p, .companys a, footer {
     font: 0.813em Arial, sans-serif;
 }
 
-.team, .our-set, .companys, form {
+h2+p, .h-icons, .team, .our-set, .companys, form {
     text-align: center;
 }
 
@@ -70,5 +69,5 @@ input[value] {
 }
 
 .f-logo {
-    font: 1.5em Kaushan Script, cursive;
+    font: 1.5em 'Kaushan Script', cursive;
 }

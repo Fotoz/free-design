@@ -1,0 +1,222 @@
+/*** 935px ***/
+
+@media screen and (max-width: 935px) {
+    p.logo {
+        padding-left: 30px;
+    }
+    
+    nav {
+        padding-bottom: 100px;
+    }
+    
+    h1 {
+        font-size: 3em;
+        padding: 0 20px;
+    }
+    
+    h2 {
+        font-size: 2.250em;
+        padding: 0 10px;
+    }
+    
+    h2+p {
+        font-size: 1em;
+        padding: 40px 30px 70px;
+    }
+    
+    .h-icons {
+        padding: 200px 0 150px;
+    }
+    
+    .h-icons img {
+        width: 60px;
+    }
+    
+    .worker:nth-last-child(2), .set:nth-last-child(2) {
+        margin-right: 0;
+    }
+    
+    .worker:last-child, .set:last-child {
+        margin-top: 15px;
+    }
+    
+    .team, .our-set,  #contacts {
+        padding-bottom: 100px;
+    }
+    
+    .company:nth-last-child(5) {
+        margin-right: 15px;
+    }
+    
+    .company:nth-last-child(6), .company:nth-last-child(3) {
+        margin-right: 0;
+    }
+
+    .company {
+        padding-bottom: 30px;
+    }
+    
+    .address {
+        width: 50%;
+    }
+    
+    .all {
+        text-align: center;
+    }
+    
+    #contacts h3 {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    #contacts img {
+        float: none;
+        padding: 0;
+    }
+    
+    .address p {
+        padding-bottom: 25px;
+    }
+    
+    .form {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    
+    footer p, footer a {
+        padding-left: 30px;
+    }
+    
+    footer img {
+        margin-left: 30px;
+    }
+}
+
+/*** 860px ***/
+
+@media screen and (max-width: 860px) {
+    #about::before, #services::before, #clients::before, #contacts::before {
+        border: none;
+    }
+    
+    nav {
+        padding-right: 10px;
+    }
+}
+
+/*** 700px ***/
+
+@media screen and (max-width: 700px) {
+    .worker:nth-last-child(2), .set:nth-last-child(2), .company:nth-last-child(6) {
+        margin-right: 15px;
+    }
+    
+    .worker:nth-last-child(3), .set:nth-last-child(3), .company:nth-last-child(7), .company:nth-last-child(5) {
+        margin-right: 0;
+    }
+}
+
+/*** 650px ***/
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    .h-icons {
+        padding: 150px 0 100px;
+    }
+    
+    .h-icons img {
+        width: 50px;
+    }
+    
+    p.logo {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    nav {
+        padding: 25px 0 50px;
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    nav li {
+        padding-top: 5px;
+    }
+    
+    #clients h2 {
+        padding-bottom: 50px;
+    }
+}
+
+/*** 550px ***/
+
+@media screen and (max-width: 500px) {
+    #contacts img {
+        padding-right: 10px;
+    }
+}
+
+/*** 466px ***/
+
+@media screen and (max-width: 466px) {
+    .address {
+        width: 100%;
+    }
+    
+    #contacts img {
+        padding-top: 10px;
+        padding-right: 0;
+    }
+}
+
+/*** 457px ***/
+
+@media screen and (max-width: 457px) {
+    nav li {
+        padding: 5px;
+    }
+    
+    .worker:first-child, .worker:nth-last-child(2), .set:first-child, .set:nth-last-child(2), .company:first-child, .company:nth-last-child(6), .company:nth-last-child(4), .company:nth-last-child(2) {
+        margin-right: 0;
+    }
+    
+    .worker:nth-last-child(2), .worker:nth-last-child(3), .set:nth-last-child(2), .set:nth-last-child(3) {
+        margin-top: 15px;
+    }
+}
+
+/*** 400px ***/
+
+@media screen and (max-width: 400px) {
+    input[placeholder] {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 25em;
+    }
+    
+    textarea {
+        width: 25em;
+        margin-top: -15px;
+    }
+}
+
+/*** 340px ***/
+
+@media screen and (max-width: 340px) {
+    nav li {
+        padding: 2px;
+    }
+    
+    input[placeholder], textarea {
+        width: 20em;
+    }
+}
