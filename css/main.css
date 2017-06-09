@@ -62,7 +62,10 @@ img[alt="in"] {
 /*** начало блока about
     ==================== ***/
 
-#about::before, #services::before, #clients::before, #contacts::before {
+#about::before,
+#services::before,
+#clients::before,
+#contacts::before {
     content: '';
     width: 0;
     height: 0;
@@ -87,7 +90,7 @@ img[alt="in"] {
     background: #f17c72;
 }
 
-#about li:hover, #about li:nth-last-child(4) {
+#about li:hover, #about li:nth-of-type(2) {
     background: #e6655e;
 }
 
@@ -155,7 +158,7 @@ p>a {
     background: #32ac97;
 }
 
-#services li:hover, #services li:nth-last-child(3) {
+#services li:hover, #services li:nth-of-type(3) {
     background: #46dcc7;
 }
 
@@ -190,7 +193,7 @@ p>a {
     background: #7f4c76;
 }
 
-#clients li:hover, #clients li:nth-last-child(2) {
+#clients li:hover, #clients li:nth-of-type(4) {
     background: #b288ab;
 }
 
@@ -209,7 +212,7 @@ p>a {
     padding-bottom: 110px;
 }
 
-.company:nth-last-child(5), .company:last-child {
+.company:nth-of-type(4), .company:last-child {
     margin-right: 0;
 }
 
