@@ -84,13 +84,10 @@
         padding-top: 25px;
     }
     
-    footer p, footer a {
+    footer p {
         padding-left: 30px;
     }
-    
-    footer img {
-        margin-left: 30px;
-    }
+
 }
 
 /*** 860px ***/

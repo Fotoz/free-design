@@ -320,20 +320,6 @@ footer {
     padding: 25px 0;
 }
 
-footer p {
-    padding-bottom: 7px;
-}
-
-footer img {
-    margin-top: 12px;
-    width: 88px;
-    height: 31px
-}
-
-footer a:hover {
-    color: #53cbff;
-}
-
 #toTop {
     width: 45px;
     position:fixed;
